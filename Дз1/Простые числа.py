@@ -4,7 +4,7 @@ def div(x):
         if x%i==0:
             d.add(i)
             d.add(x//i)
-    return True if len(d)==2 else False
+    return sorted(d)
 
 n = int(input())
 print(div(n))
